@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- 
+      Unit Converter
+      - Et input felt
+      - Konventerings meny fra
+      - Konventerings meny til
+      - Paragraf som viser resultat
+    -->
+      <form action="" class="form">
+        <label for="unitInput">
+          Skriv inn en tall verdi
+          <input
+            type="number"
+            name="unitInput"
+            id="unitInput"
+            placeholder="Skriv inn en tall verdi"
+          />
+        </label>
+        <label for="unitFrom">
+          Velg konventering fra
+          <select name="unitFrom" id="unitFrom">
+            <option value="MM">MM</option>
+            <option value="CM">CM</option>
+            <option value="M">M</option>
+            <option value="KM">KM</option>
+          </select>
+        </label>
+
+        <label for="unitTo">
+          Velg konventering til
+          <select name="unitTo" id="unitTo">
+            <option value="MM">MM</option>
+            <option value="CM">CM</option>
+            <option value="M">M</option>
+            <option value="KM">KM</option>
+          </select>
+        </label>
+        <button type="button" id="convertButton">Konventer</button>
+        <p id="displayResult"></p>
+      </form>
+    </main>
+  </body>
+</html>
